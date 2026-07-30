@@ -1,0 +1,49 @@
+{
+  "version": "ALI renewal final image build v1",
+  "generated": "2026-07-30",
+  "sourcePage": "ALIのHP画像 / https://app.notion.com/p/3ad8441cb1a180a79f37fb86508cb1e7",
+  "pages": {
+    "/": "index.html",
+    "/tech": "tech/index.html",
+    "/company": "company/index.html",
+    "/recruit": "recruit/index.html",
+    "/news": "news/index.html",
+    "/contact": "contact/index.html"
+  },
+  "imageAssignments": {
+    "heroPC": [
+      "01-hero-1.webp",
+      "02-hero-2.webp",
+      "03-hero-3.webp"
+    ],
+    "heroSP": [
+      "01-hero-1-sp.webp",
+      "02-hero-2-sp.webp",
+      "03-hero-3-sp.webp"
+    ],
+    "services": [
+      "04-service-aluminum.webp",
+      "05-service-resin.webp"
+    ],
+    "cases": [
+      "07-case-large-aluminum.webp",
+      "08-case-vacuum-plate.webp",
+      "09-case-rotating-part.webp",
+      "10-case-resin-jig.webp",
+      "11-case-mirror-finish.webp",
+      "12-case-small-lot.webp"
+    ],
+    "recruitTop": "13-recruit-workplace.webp",
+    "recruitMessage": "team-message.webp",
+    "contactPC": "team-contact-pc.webp",
+    "contactSP": "team-contact-sp.webp",
+    "president": "14-president.webp",
+    "factory": "15-factory-exterior.webp",
+    "contactHeader": "16-contact-bg-alt.webp"
+  },
+  "notes": [
+    "06-tech-intro duplicate B was inaccessible; A was used.",
+    "Google map remains a placeholder and should be replaced with the production embed.",
+    "Absolute site links assume deployment at domain root."
+  ]
+}
