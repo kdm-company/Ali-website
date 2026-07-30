@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>株式会社エイエルアイ　TOPページモック v11</title>
+<link rel="icon" href="assets/icons/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <style>
 /* =========================================================
    グレースケール階調（v4から変更なし）
@@ -251,7 +253,7 @@ a{color:inherit;text-decoration:none;}
 .set002-hdr{position:fixed;top:0;left:0;right:0;z-index:9990;height:96px;line-height:1;background:#fff;border-bottom:1px solid #E4E0D8;transition:all .4s ease-out}
 .set002-hdr__inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:100%;height:100%;padding:0 80px}
 .set002-hdr__logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.set002-hdr__logo-mark{width:36px;height:36px;background:#23272D}
+.set002-hdr__logo-img{display:block;width:auto;height:44px}
 .set002-hdr__logo-txt{font-size:19px;letter-spacing:.14em;font-weight:700;color:#23272D}
 .set002-hdr__logo-sub{display:block;margin-top:5px;font-size:10px;letter-spacing:.18em;font-weight:500;color:#858C93}
 
@@ -296,7 +298,7 @@ a{color:inherit;text-decoration:none;}
 .set002-hero__slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 1.2s ease-out}
 .set002-hero__slide.set002-is-active{opacity:1}
 /* 写真プレースホルダ（PC 1920x920 相当） */
-.set002-hero__ph{position:relative;filter:brightness(.8) saturate(.94);width:100%;height:100%;background:
+.set002-hero__ph{position:relative;filter:brightness(.88) saturate(.97);width:100%;height:100%;background:
   linear-gradient(rgba(0,0,0,.34),rgba(0,0,0,.34)),
   repeating-linear-gradient(135deg,#8A8E93 0 14px,#7F848A 14px 28px)}
 .set002-hero__slide:nth-child(2) .set002-hero__ph{background:
@@ -616,7 +618,7 @@ body{background:var(--c-bg);color:#33383E}
   linear-gradient(180deg,rgba(27,31,36,.52) 0%,rgba(35,39,45,.62) 55%,rgba(27,31,36,.78) 100%),
   repeating-linear-gradient(135deg,#474139 0 14px,#3B3630 14px 28px)}
 .set002-hero__catch{color:#FFFFFF;text-shadow:0 2px 22px rgba(8,10,12,.6),0 1px 4px rgba(8,10,12,.65)}
-.set002-hero__ph::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(13,15,18,.44) 0%,rgba(13,15,18,.30) 40%,rgba(13,15,18,.64) 100%),radial-gradient(62% 60% at 50% 42%,rgba(13,15,18,.10) 0%,rgba(13,15,18,.48) 100%)}
+.set002-hero__ph::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(13,15,18,.34) 0%,rgba(13,15,18,.20) 40%,rgba(13,15,18,.50) 100%),radial-gradient(62% 60% at 50% 42%,rgba(13,15,18,.06) 0%,rgba(13,15,18,.36) 100%)}
 .set002-hero__dots li{background:rgba(255,255,255,.45)}
 .set002-hero__dots li.is-active{background:var(--c-red)}
 
@@ -648,7 +650,7 @@ body{background:var(--c-bg);color:#33383E}
 .btn:hover{background:var(--c-red);border-color:var(--c-red);color:#fff}
 
 /* recruit */
-.sec051-rec__band{background:linear-gradient(135deg,#1B1F24 0%,#282E35 58%,#1B1F24 100%)}
+.sec051-rec__band{background:linear-gradient(135deg,#2E343B 0%,#3E4650 58%,#2E343B 100%)}
 .sec051-rec__band::after{content:"";position:absolute;top:0;bottom:0;left:0;width:4px;background:var(--c-red)}
 .sec051-rec__ph{background:repeating-linear-gradient(135deg,#DED6C5 0 12px,#D2C9B4 12px 24px)}
 .sec051-rec__txt{color:#C4C9CF}
@@ -673,7 +675,7 @@ body{background:var(--c-bg);color:#33383E}
 .sec019-bnr__more::after{background:var(--c-brass-lt)}
 
 /* footer */
-.ftr{background:var(--c-bg-dark);color:#BFC3C8;border-top:3px solid var(--c-brass)}
+.ftr{background:var(--c-ink);color:#BFC3C8;border-top:5px solid var(--c-brass);box-shadow:inset 0 12px 24px -12px rgba(0,0,0,.5)}
 .ftr__brand{color:#fff}
 .ftr__addr{color:#A9AFB6}
 .ftr__ttl{color:var(--c-brass)}
@@ -686,7 +688,7 @@ body{background:var(--c-bg);color:#33383E}
 .sec156-cta__bg{position:absolute;inset:0;z-index:0;background-color:#2B3138;background-image:repeating-linear-gradient(135deg,#343B43 0 14px,#2B3138 14px 28px)}
 .sec156-cta__bg::before{content:"背景写真（PC 1920×560／SP 750×900 相当）";position:absolute;top:12px;left:16px;font-size:11px;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.45)}
 /* legibility layers: vertical scrim + center vignette */
-.sec156-cta__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,31,36,.86) 0%,rgba(27,31,36,.62) 42%,rgba(27,31,36,.88) 100%),radial-gradient(115% 78% at 50% 50%,rgba(27,31,36,.34) 0%,rgba(27,31,36,.80) 100%)}
+.sec156-cta__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,36,25,.78) 0%,rgba(46,36,25,.46) 42%,rgba(35,30,26,.62) 100%),radial-gradient(115% 78% at 50% 50%,rgba(46,36,25,.28) 0%,rgba(35,30,26,.58) 100%)}
 .sec156-inner{position:relative;z-index:1}
 .sec156-cta__ttl-en{color:#D8BE85;text-shadow:0 1px 14px rgba(0,0,0,.55)}
 .sec156-cta__ttl-jp{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.6)}
@@ -725,12 +727,11 @@ body{background:var(--c-bg);color:#33383E}
 <header class="set002-hdr">
 <div class="set002-hdr__inner">
 <h1 class="set002-hdr__logo">
-<span class="set002-hdr__logo-mark"></span>
-<span class="set002-hdr__logo-txt">株式会社エイエルアイ<span class="set002-hdr__logo-sub">ALI CO., LTD.</span></span>
+<img class="set002-hdr__logo-img" src="assets/images/logo/ali-logo-240w.png" srcset="assets/images/logo/ali-logo-240w.png 240w, assets/images/logo/ali-logo.png 600w" sizes="200px" width="200" height="67" alt="株式会社エイエルアイ ALI CO., LTD.">
 </h1>
 <nav class="set002-gnav">
-<ul class="set002-gnav__menu"><li class="set002-current"><a class="set002-gnav__link" href="/">ホーム</a></li><li><a class="set002-gnav__link" href="/tech">技術・設備</a></li><li><a class="set002-gnav__link" href="/company">会社案内</a></li><li><a class="set002-gnav__link" href="/recruit">採用情報</a></li><li><a class="set002-gnav__link" href="/news">お知らせ</a></li></ul>
-<div class="set002-gnav__cta"><a href="/contact">お問い合わせ</a></div>
+<ul class="set002-gnav__menu"><li class="set002-current"><a class="set002-gnav__link" href="index.html">ホーム</a></li><li><a class="set002-gnav__link" href="tech/index.html">技術・設備</a></li><li><a class="set002-gnav__link" href="company/index.html">会社案内</a></li><li><a class="set002-gnav__link" href="recruit/index.html">採用情報</a></li><li><a class="set002-gnav__link" href="news/index.html">お知らせ</a></li></ul>
+<div class="set002-gnav__cta"><a href="contact/index.html">お問い合わせ</a></div>
 </nav>
 <button aria-label="メニュー" aria-expanded="false" class="set002-burger" type="button"><span class="set002-burger__lines"><span></span><span></span><span></span></span></button>
 </div>
@@ -755,7 +756,7 @@ body{background:var(--c-bg);color:#33383E}
 <li class="nw8__item"><a class="nw8__row" href="#"><span class="nw8__date">2023.07.04</span><span class="nw8__txt">東大阪商工月報 2023年7月号に掲載いただきました</span><span class="nw8__arw">→</span></a></li>
 </ul>
 </div>
-<div class="nw8__more"><a href="/news">一覧を見る</a></div>
+<div class="nw8__more"><a href="news/index.html">一覧を見る</a></div>
 </section>
 </div>
 
@@ -766,7 +767,7 @@ body{background:var(--c-bg);color:#33383E}
     <div class="hd8 hd8--center "><p class="hd8__ja">事業内容</p><h2 class="hd8__en">SERVICE</h2></div>
     <ul class="sec152-svc__cont">
       <li>
-        <a href="/tech#turning">
+        <a href="tech/index.html#turning">
           <div class="sec152-svc__img">
             <div class="sec152-svc__ph" data-l="事業内容写真（640×400 相当）" style="background-image:url('assets/images/04-service-aluminum.webp');background-size:cover;background-position:center"></div>
             <p class="sec152-svc__hover">加工内容をお探しの方<br>はこちら</p>
@@ -776,7 +777,7 @@ body{background:var(--c-bg);color:#33383E}
         </a>
       </li>
       <li>
-        <a href="/tech#machining">
+        <a href="tech/index.html#machining">
           <div class="sec152-svc__img">
             <div class="sec152-svc__ph" data-l="事業内容写真（640×400 相当）" style="background-image:url('assets/images/05-service-resin.webp');background-size:cover;background-position:center"></div>
             <p class="sec152-svc__hover">加工内容をお探しの方<br>はこちら</p>
@@ -814,7 +815,7 @@ body{background:var(--c-bg);color:#33383E}
 <p class="work__txt">付加軸による4軸加工で持ち替えを減らし、試作1個でも短納期で対応。図面のご相談から量産移行までを一貫してお手伝いします。</p>
 </article>
 </div>
-<div class="center-btn"><a class="btn" href="/tech#works">事例をもっと見る</a></div>
+<div class="center-btn"><a class="btn" href="tech/index.html#works">事例をもっと見る</a></div>
 </div>
 </section>
 
@@ -826,7 +827,7 @@ body{background:var(--c-bg);color:#33383E}
     <div class="sec051-rec__txt">
       <div class="hd8 hd8--left hd8--on-dark"><p class="hd8__ja">採用情報</p><h2 class="hd8__en">RECRUIT</h2></div>
       <p class="sec051-rec__lead">未経験からでも、機械加工の技術をひとつずつ身につけられる職場です。ベテラン社員の知識と経験を若い世代へ継承しながら、ともに成長できる仲間を募集しています。</p>
-      <a class="sec051-rec__btn" href="/recruit">採用情報を見る</a>
+      <a class="sec051-rec__btn" href="recruit/index.html">採用情報を見る</a>
     </div>
     <div class="sec051-rec__img"><div class="sec051-rec__ph" data-l="採用写真（960×600 相当）" style="background-image:url('assets/images/13-recruit-workplace.webp');background-size:cover;background-position:center"></div></div>
   </div>
@@ -844,7 +845,7 @@ body{background:var(--c-bg);color:#33383E}
     </h2>
     <p class="sec156-cta__txt">加工のご相談・お見積り、設備や対応範囲の資料請求など、ご用件を問わずお気軽にお問い合わせください。図面が固まっていない段階からのご相談も歓迎しております。</p>
     <div class="sec156-btn">
-      <a href="/contact"><span><i class="sec156-btn__icon"></i>お問い合わせ</span></a>
+      <a href="contact/index.html"><span><i class="sec156-btn__icon"></i>お問い合わせ</span></a>
     </div>
     <p class="sec156-cta__tel">お電話でのご連絡：TEL 072-927-9118／FAX 072-927-9119</p>
   </div>
@@ -854,14 +855,14 @@ body{background:var(--c-bg);color:#33383E}
 <div class="mt-scope sec-anchor mt-sec019-wrap">
 <span class="secid secid--new">SEC-019改 モバイル用バナー2枚（採用＋お問い合わせ）SPのみ</span>
 <section class="sec019-bnr">
-  <a class="sec019-bnr__item sec019-bnr__item--01" href="/recruit">
+  <a class="sec019-bnr__item sec019-bnr__item--01" href="recruit/index.html">
     <span class="sec019-bnr__txt">
       <span class="sec019-bnr__ttl">採用情報</span>
       <span class="sec019-bnr__note">未経験歓迎／技術を一から習得できます</span>
       <span class="sec019-bnr__more">詳しく見る</span>
     </span>
   </a>
-  <a class="sec019-bnr__item sec019-bnr__item--02" href="/contact">
+  <a class="sec019-bnr__item sec019-bnr__item--02" href="contact/index.html">
     <span class="sec019-bnr__txt">
       <span class="sec019-bnr__ttl">お問い合わせ</span>
       <span class="sec019-bnr__note">TEL 072-927-9118</span>
@@ -880,9 +881,9 @@ body{background:var(--c-bg);color:#33383E}
 <p class="ftr__addr">〒578-0911 大阪府東大阪市中新開1丁目4-8<br/>TEL 072-927-9118／FAX 072-927-9119<br/>アルミ精密切削加工（旋盤・マシニング）</p>
 </div>
 <div class="ftr__navs">
-<div><p class="ftr__ttl">技術・設備</p><ul class="ftr__list"><li><a href="/tech#turning">精密旋盤加工</a></li><li><a href="/tech#machining">フライス・マシニング加工</a></li><li><a href="/tech#equipment">設備一覧</a></li></ul></div>
-<div><p class="ftr__ttl">会社案内</p><ul class="ftr__list"><li><a href="/company#profile">会社概要</a></li><li><a href="/company#history">沿革</a></li><li><a href="/company#quality">品質方針（ISO9001）</a></li></ul></div>
-<div><p class="ftr__ttl">その他</p><ul class="ftr__list"><li><a href="/news">お知らせ</a></li><li><a href="/recruit">採用情報</a></li><li><a href="/privacy">プライバシーポリシー</a></li></ul></div>
+<div><p class="ftr__ttl">技術・設備</p><ul class="ftr__list"><li><a href="tech/index.html#turning">精密旋盤加工</a></li><li><a href="tech/index.html#machining">フライス・マシニング加工</a></li><li><a href="tech/index.html#equipment">設備一覧</a></li></ul></div>
+<div><p class="ftr__ttl">会社案内</p><ul class="ftr__list"><li><a href="company/index.html#profile">会社概要</a></li><li><a href="company/index.html#history">沿革</a></li><li><a href="company/index.html#quality">品質方針（ISO9001）</a></li></ul></div>
+<div><p class="ftr__ttl">その他</p><ul class="ftr__list"><li><a href="news/index.html">お知らせ</a></li><li><a href="recruit/index.html">採用情報</a></li><li><a href="privacy/index.html">プライバシーポリシー</a></li></ul></div>
 </div>
 </div>
 
@@ -890,7 +891,7 @@ body{background:var(--c-bg);color:#33383E}
 <div class="ftr__bar">
 <div class="wrap ftr__bar-inner">
 <span>© 2026 ALI Co., Ltd. All Rights Reserved.</span>
-<span><a href="/privacy">プライバシーポリシー</a><a href="/sitemap">サイトマップ</a></span>
+<span><a href="privacy/index.html">プライバシーポリシー</a><a href="sitemap/index.html">サイトマップ</a></span>
 </div>
 </div>
 </footer>
