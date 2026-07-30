@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>株式会社エイエルアイ　TOPページモック v11</title>
+<title>株式会社エイエルアイ｜アルミ精密加工・半導体製造装置部品</title>
 <link rel="icon" href="assets/icons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <style>
@@ -540,7 +540,7 @@ body{background:var(--c-bg);color:#33383E}
 .nw8__arw{flex:none;font-size:13px;color:var(--c-text-mute);transition:transform .3s,color .3s}
 .nw8__row:hover .nw8__txt{color:var(--c-red)}
 .nw8__row:hover .nw8__arw{color:var(--c-red);transform:translateX(4px)}
-.nw8__more{width:100%;margin-top:18px;padding-top:14px;border-top:1px solid #EAE6DE;text-align:center}
+.nw8__more{width:100%;margin-top:18px;padding-top:14px;border-top:1px solid #EDE8DE;text-align:center}
 .nw8__more a{display:inline-flex;flex-direction:column;align-items:center;gap:6px;
   font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic",sans-serif;font-size:13px;font-weight:700;letter-spacing:.18em;color:var(--c-charcoal);transition:color .3s}
 .nw8__more a::after{content:"";display:block;width:8px;height:8px;
@@ -719,6 +719,16 @@ body{background:var(--c-bg);color:#33383E}
 }
 
 .secid{display:none!important}
+
+/* v15: mobile global navigation fixes */
+html.is-menu-open,
+body.is-menu-open{overflow:hidden}
+@media screen and (max-width:1080px){
+  .set002-gnav{left:0;right:0;width:100%;height:calc(100dvh - 64px);z-index:9998;overscroll-behavior:contain}
+  .set002-burger{z-index:9999}
+  .set002-gnav__link{min-height:48px}
+  .set002-hero__dots li.set002-is-active{background:var(--c-red)}
+}
 </style>
 </head>
 <body>
@@ -895,6 +905,50 @@ body{background:var(--c-bg);color:#33383E}
 </div>
 </div>
 </footer>
-<script>(()=>{const btn=document.querySelector('.set002-burger'),nav=document.querySelector('.set002-gnav');if(!btn||!nav)return;btn.addEventListener('click',()=>{const open=!nav.classList.contains('is-open');nav.classList.toggle('is-open',open);btn.classList.toggle('is-open',open);btn.setAttribute('aria-expanded',String(open));});})();</script>
+<script>
+(() => {
+  const btn = document.querySelector('.set002-burger');
+  const nav = document.querySelector('.set002-gnav');
+
+  if (!btn || !nav) return;
+
+  btn.setAttribute('aria-controls', 'global-navigation');
+  nav.setAttribute('id', 'global-navigation');
+
+  const openMenu = () => {
+    nav.classList.add('is-open');
+    btn.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+    document.documentElement.classList.add('is-menu-open');
+    document.body.classList.add('is-menu-open');
+  };
+
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    btn.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('is-menu-open');
+    document.body.classList.remove('is-menu-open');
+  };
+
+  btn.addEventListener('click', () => {
+    nav.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.classList.contains('is-open')) return;
+    if (nav.contains(event.target) || btn.contains(event.target)) return;
+    closeMenu();
+  });
+})();
+</script>
 </body>
 </html>
