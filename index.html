@@ -729,11 +729,32 @@ body.is-menu-open{overflow:hidden}
   .set002-gnav__link{min-height:48px}
   .set002-hero__dots li.set002-is-active{background:var(--c-red)}
 }
+
+/* ===== v16: 旧サイト要素の復元（スローガン／エイエルアイに出来ること） ===== */
+.set002-slogan{padding:64px 0 56px;background:#fff;border-bottom:1px solid #E7E3DB;text-align:center}
+.set002-slogan__inner{width:90%;max-width:960px;margin:0 auto}
+.set002-slogan__catch{font-family:"A1明朝","Hiragino Mincho ProN",serif;font-size:22px;line-height:2;letter-spacing:.08em;color:#23272D}
+.set002-slogan__en{display:inline-block;margin-top:10px;font-family:"Arial","Helvetica Neue",sans-serif;font-size:13px;letter-spacing:.04em;color:#5A6068}
+@media screen and (max-width:767px){
+  .set002-slogan{padding:40px 0 32px}
+  .set002-slogan__catch{font-size:15px;line-height:1.9}
+  .set002-slogan__en{font-size:11px}
+}
+.sec153-can{padding:96px 0;background:var(--c-ivory)}
+.sec153-inner{width:90%;max-width:1120px;margin:0 auto}
+.sec153-can__list{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#DDD8CE;border:1px solid #DDD8CE;margin-top:12px;list-style:none;padding:0}
+.sec153-can__list li{background:#fff;padding:32px 28px}
+.sec153-can__q{font-size:15px;font-weight:700;letter-spacing:.05em;color:var(--c-red);margin:0 0 12px}
+.sec153-can__a{font-size:13.5px;line-height:1.95;color:var(--c-text-sub);margin:0}
+@media screen and (max-width:767px){
+  .sec153-can{padding:56px 0}
+  .sec153-can__list{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 <div class="mt-scope sec-anchor mt-set002-wrap">
-<span class="secid secid--new">SET-002 ファーストビュー一式（ヘッダー＋ヒーロー＋新着情報）＋SEC-053の一覧</span>
+<span class="secid secid--new">SET-002 ファーストビュー一式（ヘッダー＋ヒーロー＋スローガン＋新着情報）＋SEC-053の一覧</span>
 <header class="set002-hdr">
 <div class="set002-hdr__inner">
 <h1 class="set002-hdr__logo">
@@ -752,8 +773,12 @@ body.is-menu-open{overflow:hidden}
 <div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629170242-62bc07229f5b4.jpg');background-size:cover;background-position:center"></div></div>
 <div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629172602-62bc0c9aea8de.jpg');background-size:cover;background-position:center"></div></div>
 </div>
-<p class="set002-hero__catch">アルミ精密加工の技術で、<br/>半導体の最先端をささえる。</p>
 <ul class="set002-hero__dots"><li class="set002-is-active"></li><li></li><li></li></ul>
+</section>
+<section class="set002-slogan">
+<div class="set002-slogan__inner">
+<p class="set002-slogan__catch">半導体製造装置向け　ハイエンド精密部品加工に特化<br>Ⓢemiconductor　Ⓟrecision　Ⓟarts　ⓞf　Nippoⓝ<br>スローガンは　ⓈⓅⓅⓞⓝ　世界に負けない日本のモノ作りを<br><span class="set002-slogan__en">Specializing in High-end, Precision Manufacturing Equipment for Semiconductors</span></p>
+</div>
 </section>
 <section class="set002-news">
 <div class="set002-news__lft">
@@ -795,6 +820,37 @@ body.is-menu-open{overflow:hidden}
           <h3 class="sec152-svc__ttl"><span class="sec152-svc__ttl-en">02</span><span class="sec152-svc__ttl-jp">フライス・マシニング加工</span></h3>
           <p class="sec152-svc__txt">5軸・4軸を含むマシニングセンタでA2017・A7075などのアルミ材を高精度に切削。半導体製造装置向けのコア部品を、2工場・計25台の設備で安定して供給します。</p>
         </a>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<div class="mt-scope sec-anchor mt-sec153-wrap">
+<span class="secid secid--new">SEC-153 エイエルアイに出来ること（旧サイトQ&amp;Aコンテンツを再編・5項目）</span>
+<section class="sec153-can">
+  <div class="sec153-inner">
+    <div class="hd8 hd8--center "><p class="hd8__ja">エイエルアイに出来ること</p><h2 class="hd8__en">WHAT WE CAN DO</h2></div>
+    <ul class="sec153-can__list">
+      <li>
+        <p class="sec153-can__q">Q. 公差の厳しい製品は製作可能ですか？</p>
+        <p class="sec153-can__a">マイクロメートル（1000分代）の公差の厳しい製品や小径穴も得意としております。吸着プレートやシャワープレート等の実績も多く、最小径ではφ0.08の実績もございます。</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">Q. 何個から注文が出来ますか？</p>
+        <p class="sec153-can__a">小ロットでは1個から量産品まで、複数個同時加工にて対応可能です。品質・高精度が求められる精密部品の量産品も安定して製作いたします。</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">Q. A2017・A7075削れますか？</p>
+        <p class="sec153-can__a">A2017・A7075など難削材（超超ジュラルミン）を得意としております。精度が出ない、反ってしまうなどのお悩みも、吸着プレート・セラミックコンデンサ治具等の実績で解決いたします。</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">Q. アルマイトやメッキまで出来ますか？</p>
+        <p class="sec153-can__a">素材調達はもちろん、アルマイトや特殊表面処理まで、協力企業とのネットワークにより一貫してお受けいたします。</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">Q. 出来るのはアルミの切削だけですか？</p>
+        <p class="sec153-can__a">アルミ専門の切削加工に加え、鉄・ステンレス・真鍮・ダイキャストまで信頼できる協力企業と連携して対応。材料手配から熱処理・表面処理・研磨・検査・組立まで一貫してお受けいたします。</p>
       </li>
     </ul>
   </div>
