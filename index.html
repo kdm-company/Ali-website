@@ -729,11 +729,32 @@ body.is-menu-open{overflow:hidden}
   .set002-gnav__link{min-height:48px}
   .set002-hero__dots li.set002-is-active{background:var(--c-red)}
 }
+
+/* ===== v16: 旧サイト要素の復元（スローガン／エイエルアイに出来ること） ===== */
+.set002-slogan{padding:64px 0 56px;background:#fff;border-bottom:1px solid #E7E3DB;text-align:center}
+.set002-slogan__inner{width:90%;max-width:960px;margin:0 auto}
+.set002-slogan__catch{font-family:"A1明朝","Hiragino Mincho ProN",serif;font-size:22px;line-height:2;letter-spacing:.08em;color:#23272D}
+.set002-slogan__en{display:inline-block;margin-top:10px;font-family:"Arial","Helvetica Neue",sans-serif;font-size:13px;letter-spacing:.04em;color:#5A6068}
+@media screen and (max-width:767px){
+  .set002-slogan{padding:40px 0 32px}
+  .set002-slogan__catch{font-size:15px;line-height:1.9}
+  .set002-slogan__en{font-size:11px}
+}
+.sec153-can{padding:96px 0;background:var(--c-ivory)}
+.sec153-inner{width:90%;max-width:1120px;margin:0 auto}
+.sec153-can__list{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#DDD8CE;border:1px solid #DDD8CE;margin-top:12px;list-style:none;padding:0}
+.sec153-can__list li{background:#fff;padding:28px 20px;text-align:center}
+.sec153-can__q{font-size:15px;font-weight:700;letter-spacing:.05em;color:var(--c-red);margin:0}
+.sec153-can__a{font-size:13.5px;line-height:1.95;color:var(--c-text-sub);margin:0}
+@media screen and (max-width:767px){
+  .sec153-can{padding:56px 0}
+  .sec153-can__list{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 <div class="mt-scope sec-anchor mt-set002-wrap">
-<span class="secid secid--new">SET-002 ファーストビュー一式（ヘッダー＋ヒーロー＋新着情報）＋SEC-053の一覧</span>
+<span class="secid secid--new">SET-002 ファーストビュー一式（ヘッダー＋ヒーロー＋スローガン＋新着情報）＋SEC-053の一覧</span>
 <header class="set002-hdr">
 <div class="set002-hdr__inner">
 <h1 class="set002-hdr__logo">
@@ -752,8 +773,12 @@ body.is-menu-open{overflow:hidden}
 <div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629170242-62bc07229f5b4.jpg');background-size:cover;background-position:center"></div></div>
 <div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629172602-62bc0c9aea8de.jpg');background-size:cover;background-position:center"></div></div>
 </div>
-<p class="set002-hero__catch">アルミ精密加工の技術で、<br/>半導体の最先端をささえる。</p>
 <ul class="set002-hero__dots"><li class="set002-is-active"></li><li></li><li></li></ul>
+</section>
+<section class="set002-slogan">
+<div class="set002-slogan__inner">
+<p class="set002-slogan__catch">半導体製造装置向け　ハイエンド精密部品加工に特化<br>Ⓢemiconductor　Ⓟrecision　Ⓟarts　ⓞf　Nippoⓝ<br>スローガンは　ⓈⓅⓅⓞⓝ　世界に負けない日本のモノ作りを<br><span class="set002-slogan__en">Specializing in High-end, Precision Manufacturing Equipment for Semiconductors</span></p>
+</div>
 </section>
 <section class="set002-news">
 <div class="set002-news__lft">
@@ -770,31 +795,26 @@ body.is-menu-open{overflow:hidden}
 </section>
 </div>
 
-<div class="mt-scope sec-anchor mt-sec152-wrap">
-<span class="secid secid--new">SEC-152 事業内容（2区分・ホバー挙動をトレース）</span>
-<section class="sec152-svc">
-  <div class="sec152-inner">
-    <div class="hd8 hd8--center "><p class="hd8__ja">事業内容</p><h2 class="hd8__en">SERVICE</h2></div>
-    <ul class="sec152-svc__cont">
+<div class="mt-scope sec-anchor mt-sec153-wrap">
+<span class="secid secid--new">SEC-153 エイエルアイに出来ること（旧HP「/about」会社概要表 事業内容5項目を復元・SERVICE欄との重複を整理）</span>
+<section class="sec153-can">
+  <div class="sec153-inner">
+    <div class="hd8 hd8--center "><p class="hd8__ja">エイエルアイに出来ること</p><h2 class="hd8__en">WHAT WE CAN DO</h2></div>
+    <ul class="sec153-can__list">
       <li>
-        <a href="tech/index.html#turning">
-          <div class="sec152-svc__img">
-            <div class="sec152-svc__ph" data-l="事業内容写真（640×400 相当）" style="background-image:url('https://cdn.goope.jp/41781/190401173446-5ca1cd2622379.jpg');background-size:cover;background-position:center"></div>
-            <p class="sec152-svc__hover">加工内容をお探しの方<br>はこちら</p>
-          </div>
-          <h3 class="sec152-svc__ttl"><span class="sec152-svc__ttl-en">01</span><span class="sec152-svc__ttl-jp">精密旋盤加工</span></h3>
-          <p class="sec152-svc__txt">オークマ製CNC旋盤を軸に、最小径φ0.08mmの微細な部品から φ420mmまでのアルミ丸物加工に対応します。1個の試作から継続量産まで、必要な数量だけを短納期でお届けします。</p>
-        </a>
+        <p class="sec153-can__q">半導体製造装置用精密部品加工</p>
       </li>
       <li>
-        <a href="tech/index.html#machining">
-          <div class="sec152-svc__img">
-            <div class="sec152-svc__ph" data-l="事業内容写真（640×400 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629172602-62bc0c9aea8de.jpg');background-size:cover;background-position:center"></div>
-            <p class="sec152-svc__hover">加工内容をお探しの方<br>はこちら</p>
-          </div>
-          <h3 class="sec152-svc__ttl"><span class="sec152-svc__ttl-en">02</span><span class="sec152-svc__ttl-jp">フライス・マシニング加工</span></h3>
-          <p class="sec152-svc__txt">5軸・4軸を含むマシニングセンタでA2017・A7075などのアルミ材を高精度に切削。半導体製造装置向けのコア部品を、2工場・計25台の設備で安定して供給します。</p>
-        </a>
+        <p class="sec153-can__q">真空チャンバー内消耗部品の加工</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">高品質量産加工品</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">クリーン事業</p>
+      </li>
+      <li>
+        <p class="sec153-can__q">マシニングセンターのクーラント清掃</p>
       </li>
     </ul>
   </div>
@@ -875,80 +895,27 @@ body.is-menu-open{overflow:hidden}
   <a class="sec019-bnr__item sec019-bnr__item--02" href="contact/index.html">
     <span class="sec019-bnr__txt">
       <span class="sec019-bnr__ttl">お問い合わせ</span>
-      <span class="sec019-bnr__note">TEL 072-927-9118</span>
-      <span class="sec019-bnr__more">フォームへ進む</span>
+      <span class="sec019-bnr__note">お見積り・ご相談はお気軽にご連絡ください</span>
+      <span class="sec019-bnr__more">詳しく見る</span>
     </span>
   </a>
 </section>
 </div>
 
 <footer class="ftr sec-anchor">
-<span class="secid">SEC-047 コーポレートフッター</span>
 <div class="wrap">
 <div class="ftr__top">
-<div class="ftr__brand">
-<span class="logo__mark">株式会社エイエルアイ</span>
-<p class="ftr__addr">〒578-0911 大阪府東大阪市中新開1丁目4-8<br/>TEL 072-927-9118／FAX 072-927-9119<br/>アルミ精密切削加工（旋盤・マシニング）</p>
-</div>
+<div class="ftr__brand"><span class="logo__mark">株式会社エイエルアイ</span><p class="ftr__addr">〒578-0911 大阪府東大阪市中新開1丁目4-8<br>TEL 072-927-9118／FAX 072-927-9119<br>アルミ精密切削加工（旋盤・マシニング）</p></div>
 <div class="ftr__navs">
 <div><p class="ftr__ttl">技術・設備</p><ul class="ftr__list"><li><a href="tech/index.html#turning">精密旋盤加工</a></li><li><a href="tech/index.html#machining">フライス・マシニング加工</a></li><li><a href="tech/index.html#equipment">設備一覧</a></li></ul></div>
 <div><p class="ftr__ttl">会社案内</p><ul class="ftr__list"><li><a href="company/index.html#profile">会社概要</a></li><li><a href="company/index.html#history">沿革</a></li><li><a href="company/index.html#quality">品質方針（ISO9001）</a></li></ul></div>
 <div><p class="ftr__ttl">その他</p><ul class="ftr__list"><li><a href="news/index.html">お知らせ</a></li><li><a href="recruit/index.html">採用情報</a></li><li><a href="privacy/index.html">プライバシーポリシー</a></li></ul></div>
 </div>
 </div>
-
 </div>
-<div class="ftr__bar">
-<div class="wrap ftr__bar-inner">
-<span>© 2026 ALI Co., Ltd. All Rights Reserved.</span>
-<span><a href="privacy/index.html">プライバシーポリシー</a><a href="sitemap/index.html">サイトマップ</a></span>
-</div>
-</div>
+<div class="ftr__bar"><div class="wrap ftr__bar-inner"><span>© 2026 ALI Co., Ltd. All Rights Reserved.</span><span><a href="privacy/index.html">プライバシーポリシー</a><a href="sitemap/index.html">サイトマップ</a></span></div></div>
 </footer>
-<script>
-(() => {
-  const btn = document.querySelector('.set002-burger');
-  const nav = document.querySelector('.set002-gnav');
-
-  if (!btn || !nav) return;
-
-  btn.setAttribute('aria-controls', 'global-navigation');
-  nav.setAttribute('id', 'global-navigation');
-
-  const openMenu = () => {
-    nav.classList.add('is-open');
-    btn.classList.add('is-open');
-    btn.setAttribute('aria-expanded', 'true');
-    document.documentElement.classList.add('is-menu-open');
-    document.body.classList.add('is-menu-open');
-  };
-
-  const closeMenu = () => {
-    nav.classList.remove('is-open');
-    btn.classList.remove('is-open');
-    btn.setAttribute('aria-expanded', 'false');
-    document.documentElement.classList.remove('is-menu-open');
-    document.body.classList.remove('is-menu-open');
-  };
-
-  btn.addEventListener('click', () => {
-    nav.classList.contains('is-open') ? closeMenu() : openMenu();
-  });
-
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
-  });
-
-  document.addEventListener('click', (event) => {
-    if (!nav.classList.contains('is-open')) return;
-    if (nav.contains(event.target) || btn.contains(event.target)) return;
-    closeMenu();
-  });
-})();
-</script>
+<script>(()=>{document.querySelectorAll('.set002-burger').forEach(btn=>{btn.addEventListener('click',()=>{const nav=btn.closest('.set002-hdr').querySelector('.set002-gnav');const open=!nav.classList.contains('is-open');nav.classList.toggle('is-open',open);btn.classList.toggle('is-open',open);btn.setAttribute('aria-expanded',String(open));});});})();</script>
+<script>(()=>{const slides=document.querySelectorAll('.set002-hero__slide');const dots=document.querySelectorAll('.set002-hero__dots li');if(slides.length<2)return;let i=0;setInterval(()=>{slides[i].classList.remove('set002-is-active');if(dots[i])dots[i].classList.remove('set002-is-active');i=(i+1)%slides.length;slides[i].classList.add('set002-is-active');if(dots[i])dots[i].classList.add('set002-is-active');},5000);})();</script>
 </body>
 </html>
