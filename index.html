@@ -318,7 +318,7 @@ a{color:inherit;text-decoration:none;}
 @media screen and (max-width:1250px){.set002-hero__catch{font-size:46px}}
 @media screen and (max-width:767px){
   .set002-hero{height:90vh}
-  .set002-hero__catch{font-size:23.8px;letter-spacing:.16em;transform:translateY(-50%)}
+  .set002-hero__catch{font-size:clamp(17px,5.6vw,23.8px);letter-spacing:.12em;padding:0 10px;transform:translateY(-50%)}
   .set002-hero__dots{position:absolute;left:0;right:0;bottom:24px;z-index:2;display:flex;justify-content:center;gap:8px}
   .set002-hero__dots li{width:8px;height:8px;background:rgba(255,255,255,.5)}
   .set002-hero__dots li.set002-is-active{background:#fff}
@@ -779,6 +779,7 @@ body.is-menu-open{overflow:hidden}
 <div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-machining-center.jpg');background-size:cover;background-position:center"></div></div>
 <div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-5axis-machining.jpg');background-size:cover;background-position:center"></div></div>
 </div>
+<p class="set002-hero__catch">アルミ精密加工の技術で、<br/>半導体の最先端をささえる。</p>
 <ul class="set002-hero__dots"><li class="set002-is-active"></li><li></li><li></li></ul>
 </section>
 <section class="set002-slg">
