@@ -1,7 +1,7 @@
 {
-  "version": "ALI renewal final image build v1",
-  "generated": "2026-07-30",
-  "sourcePage": "ALIのHP画像 / https://app.notion.com/p/3ad8441cb1a180a79f37fb86508cb1e7",
+  "version": "ALI renewal old-site-restore v2",
+  "generated": "2026-08-19",
+  "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
     "/": "index.html",
     "/tech": "tech/index.html",
@@ -12,38 +12,40 @@
   },
   "imageAssignments": {
     "heroPC": [
-      "01-hero-1.webp",
-      "02-hero-2.webp",
-      "03-hero-3.webp"
+      "old/old-factory-machines.jpg",
+      "old/old-machining-center.jpg",
+      "old/old-5axis-machining.jpg"
     ],
     "heroSP": [
-      "01-hero-1-sp.webp",
-      "02-hero-2-sp.webp",
-      "03-hero-3-sp.webp"
+      "old/old-factory-machines.jpg",
+      "old/old-micro-drill.jpg",
+      "old/old-ali-logo-hole.jpg"
     ],
-    "services": [
-      "04-service-aluminum.webp",
-      "05-service-resin.webp"
+    "worksTop": [
+      "old/old-factory-machines.jpg",
+      "old/old-micro-drill.jpg",
+      "old/old-5axis-machining.jpg"
     ],
-    "cases": [
-      "07-case-large-aluminum.webp",
-      "08-case-vacuum-plate.webp",
-      "09-case-rotating-part.webp",
-      "10-case-resin-jig.webp",
-      "11-case-mirror-finish.webp",
-      "12-case-small-lot.webp"
+    "techStrength": "old/old-cad.jpg",
+    "techCases": [
+      "old/old-factory-machines.jpg",
+      "old/old-micro-drill.jpg",
+      "old/old-5axis-machining.jpg",
+      "old/old-heat-treatment.jpg",
+      "old/old-sandblast.jpg",
+      "old/old-ali-logo-hole.jpg"
     ],
-    "recruitTop": "13-recruit-workplace.webp",
-    "recruitMessage": "team-message.webp",
-    "contactPC": "team-contact-pc.webp",
-    "contactSP": "team-contact-sp.webp",
-    "president": "14-president.webp",
-    "factory": "15-factory-exterior.webp",
-    "contactHeader": "16-contact-bg-alt.webp"
+    "recruitTop": "old/old-inspection.jpg",
+    "recruitMessage": "old/old-workplace.jpg",
+    "contactCTA": "old/old-factory-machines.jpg",
+    "companyFactoryBand": "old/old-factory2-exterior.jpg",
+    "newsHeader": "old/old-award-mono.jpg",
+    "contactHeader": "old/old-factory2-exterior.jpg"
   },
   "notes": [
-    "06-tech-intro duplicate B was inaccessible; A was used.",
-    "Google map remains a placeholder and should be replaced with the production embed.",
-    "Absolute site links assume deployment at domain root."
+    "assets/images/old/ の12点は旧サイト（cdn.goope.jp）から2026-08-19に取得した実写真。",
+    "生成画像のうち実写と誤認しうるもの（14-president / 15-factory-exterior / team-contact-pc / team-contact-sp）は削除済み。",
+    "Google map は company ページに埋め込み済み。",
+    "相対リンク構成のためサブディレクトリ配信（GitHub Pages）でも動作する。"
   ]
 }
