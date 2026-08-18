@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>株式会社エイエルアイ｜アルミ精密加工・半導体製造装置部品</title>
+<meta name="description" content="半導体製造装置向けハイエンド精密部品加工に特化。大阪府東大阪市のアルミ精密切削加工会社、株式会社エイエルアイの公式サイトです。">
 <link rel="icon" href="assets/icons/favicon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <style>
@@ -712,9 +713,9 @@ body{background:var(--c-bg);color:#33383E}
 .set002-hero__ph::after,.sec152-svc__ph::after,.ph::after,.sec051-rec__ph::after,.sec156-cta__bg::before{display:none!important}
 .sec156-cta__bg{background-image:url('assets/images/team-contact-pc.webp')!important;background-size:cover!important;background-position:center bottom!important}
 @media(max-width:767px){
- .set002-hero__slide:nth-child(1) .set002-hero__ph{background-image:url('assets/images/01-hero-1-sp.webp')!important}
- .set002-hero__slide:nth-child(2) .set002-hero__ph{background-image:url('assets/images/02-hero-2-sp.webp')!important}
- .set002-hero__slide:nth-child(3) .set002-hero__ph{background-image:url('assets/images/03-hero-3-sp.webp')!important}
+ .set002-hero__slide:nth-child(1) .set002-hero__ph{background-image:url('assets/images/old/old-factory-machines.jpg')!important;background-position:center bottom!important}
+ .set002-hero__slide:nth-child(2) .set002-hero__ph{background-image:url('assets/images/old/old-micro-drill.jpg')!important}
+ .set002-hero__slide:nth-child(3) .set002-hero__ph{background-image:url('assets/images/old/old-ali-logo-hole.jpg')!important}
  .sec156-cta__bg{background-image:url('assets/images/team-contact-sp.webp')!important;background-position:center bottom!important}
 }
 
@@ -729,6 +730,32 @@ body.is-menu-open{overflow:hidden}
   .set002-gnav__link{min-height:48px}
   .set002-hero__dots li.set002-is-active{background:var(--c-red)}
 }
+/* ===== スローガン（旧HPより復元・文言変更禁止） ===== */
+.set002-slg{padding:76px 24px;background:var(--c-bg);text-align:center}
+.set002-slg__in{max-width:960px;margin:0 auto}
+.set002-slg__ja{margin:0 0 14px;font-family:var(--ff-mincho);font-size:24px;font-weight:600;letter-spacing:.1em;line-height:1.9;color:var(--c-text)}
+.set002-slg__en{margin:0 0 30px;font-family:var(--ff-mincho);font-size:15px;letter-spacing:.14em;color:var(--c-text-sub)}
+.set002-slg__main{margin:0 0 18px;font-family:var(--ff-mincho);font-size:33px;font-weight:700;letter-spacing:.1em;line-height:1.8;color:var(--c-text)}
+.set002-slg__nw{display:inline-block}
+.set002-slg__sub{margin:0;font-family:var(--ff-en);font-size:12px;letter-spacing:.18em;color:var(--c-text-mute)}
+@media screen and (max-width:768px){.set002-slg{padding:52px 20px}.set002-slg__ja{font-size:16.5px}.set002-slg__en{font-size:11.5px;margin-bottom:22px}.set002-slg__main{font-size:20px}.set002-slg__sub{font-size:10px}}
+/* スローガン挿入に伴い、お知らせ帯のヒーロー重なり用ネガティブマージンを解除 */
+.set002-slg + .set002-news{margin-top:0}
+@media screen and (max-width:768px){.set002-slg + .set002-news{margin-top:0}}
+/* ===== ALIにできること（事業内容5項目）カード ===== */
+.sec152-svc__lead{margin:20px auto 0;max-width:760px;text-align:center;font-size:15px;color:var(--c-text-sub)}
+.sec152-svc__cont--five{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:56px 60px 50px}
+.sec152-svc__cont--five>li{width:auto;margin:0;background:#fff;border:1px solid var(--c-line);padding:30px 16px 32px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:0}
+.svc5__no{font-family:var(--ff-en);font-size:13px;letter-spacing:.2em;color:var(--c-text-mute)}
+.svc5__no::after{content:"";display:block;width:28px;height:1px;background:var(--c-line);margin:12px auto 16px}
+.svc5__ttl{margin:0;font-size:16px;font-weight:700;letter-spacing:.06em;line-height:1.7;color:var(--c-text)}
+@media screen and (max-width:1250px){.sec152-svc__cont--five{grid-template-columns:repeat(3,1fr);gap:14px;padding:48px 40px 40px}}
+@media screen and (max-width:768px){.sec152-svc__cont--five{grid-template-columns:1fr 1fr;gap:12px;padding:24px 24px 20px}.sec152-svc__cont--five>li:last-child{grid-column:1/-1}.svc5__ttl{font-size:14.5px}.svc5__ttl br{display:none}}
+
+/* CTA背景を実写真に差し替え（プレースホルダー表示を無効化） */
+.sec156-cta__bg{background-image:url('assets/images/team-contact-pc.webp');background-size:cover;background-position:center bottom}
+.sec156-cta__bg::before{content:none}
+@media screen and (max-width:767px){.sec156-cta__bg{background-image:url('assets/images/team-contact-sp.webp');background-position:center bottom}}
 </style>
 </head>
 <body>
@@ -748,12 +775,19 @@ body.is-menu-open{overflow:hidden}
 </header>
 <section class="set002-hero">
 <div class="set002-hero__slides">
-<div class="set002-hero__slide set002-is-active"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/240602001528-665b3b108a449.png');background-size:cover;background-position:center"></div></div>
-<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629170242-62bc07229f5b4.jpg');background-size:cover;background-position:center"></div></div>
-<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629172602-62bc0c9aea8de.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide set002-is-active"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-machining-center.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-5axis-machining.jpg');background-size:cover;background-position:center"></div></div>
 </div>
-<p class="set002-hero__catch">アルミ精密加工の技術で、<br/>半導体の最先端をささえる。</p>
 <ul class="set002-hero__dots"><li class="set002-is-active"></li><li></li><li></li></ul>
+</section>
+<section class="set002-slg">
+<div class="set002-slg__in">
+<p class="set002-slg__ja">半導体製造装置向け　ハイエンド精密部品加工に特化</p>
+<p class="set002-slg__en">Ⓢemiconductor　Ⓟrecision　Ⓟarts　ⓞf　Nippoⓝ</p>
+<p class="set002-slg__main"><span class="set002-slg__nw">スローガンは　ⓈⓅⓅⓞⓝ</span>　<span class="set002-slg__nw">世界に負けない日本のモノ作りを</span></p>
+<p class="set002-slg__sub">Specializing in High-end, Precision Manufacturing Equipment for Semiconductors</p>
+</div>
 </section>
 <section class="set002-news">
 <div class="set002-news__lft">
@@ -761,9 +795,9 @@ body.is-menu-open{overflow:hidden}
 </div>
 <div class="set002-news__rgt">
 <ul class="nw8__list">
-<li class="nw8__item"><a class="nw8__row" href="#"><span class="nw8__date">2024.03.12</span><span class="nw8__txt">第26回東大阪モノづくり大賞 銅賞を受賞しました</span><span class="nw8__arw">→</span></a></li>
-<li class="nw8__item"><a class="nw8__row" href="#"><span class="nw8__date">2024.01.31</span><span class="nw8__txt">品質マネジメントシステム「ISO9001:2015」認証取得のお知らせ</span><span class="nw8__arw">→</span></a></li>
-<li class="nw8__item"><a class="nw8__row" href="#"><span class="nw8__date">2023.07.04</span><span class="nw8__txt">東大阪商工月報 2023年7月号に掲載いただきました</span><span class="nw8__arw">→</span></a></li>
+<li class="nw8__item"><a class="nw8__row" href="news/index.html"><span class="nw8__date">2024.03.12</span><span class="nw8__txt">第26回東大阪モノづくり大賞 銅賞を受賞しました</span><span class="nw8__arw">→</span></a></li>
+<li class="nw8__item"><a class="nw8__row" href="news/index.html"><span class="nw8__date">2024.01.31</span><span class="nw8__txt">品質マネジメントシステム「ISO9001:2015」認証取得のお知らせ</span><span class="nw8__arw">→</span></a></li>
+<li class="nw8__item"><a class="nw8__row" href="news/index.html"><span class="nw8__date">2023.07.04</span><span class="nw8__txt">東大阪商工月報 2023年7月号に掲載いただきました</span><span class="nw8__arw">→</span></a></li>
 </ul>
 </div>
 <div class="nw8__more"><a href="news/index.html">一覧を見る</a></div>
@@ -774,28 +808,14 @@ body.is-menu-open{overflow:hidden}
 <span class="secid secid--new">SEC-152 事業内容（2区分・ホバー挙動をトレース）</span>
 <section class="sec152-svc">
   <div class="sec152-inner">
-    <div class="hd8 hd8--center "><p class="hd8__ja">事業内容</p><h2 class="hd8__en">SERVICE</h2></div>
-    <ul class="sec152-svc__cont">
-      <li>
-        <a href="tech/index.html#turning">
-          <div class="sec152-svc__img">
-            <div class="sec152-svc__ph" data-l="事業内容写真（640×400 相当）" style="background-image:url('https://cdn.goope.jp/41781/190401173446-5ca1cd2622379.jpg');background-size:cover;background-position:center"></div>
-            <p class="sec152-svc__hover">加工内容をお探しの方<br>はこちら</p>
-          </div>
-          <h3 class="sec152-svc__ttl"><span class="sec152-svc__ttl-en">01</span><span class="sec152-svc__ttl-jp">精密旋盤加工</span></h3>
-          <p class="sec152-svc__txt">オークマ製CNC旋盤を軸に、最小径φ0.08mmの微細な部品から φ420mmまでのアルミ丸物加工に対応します。1個の試作から継続量産まで、必要な数量だけを短納期でお届けします。</p>
-        </a>
-      </li>
-      <li>
-        <a href="tech/index.html#machining">
-          <div class="sec152-svc__img">
-            <div class="sec152-svc__ph" data-l="事業内容写真（640×400 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629172602-62bc0c9aea8de.jpg');background-size:cover;background-position:center"></div>
-            <p class="sec152-svc__hover">加工内容をお探しの方<br>はこちら</p>
-          </div>
-          <h3 class="sec152-svc__ttl"><span class="sec152-svc__ttl-en">02</span><span class="sec152-svc__ttl-jp">フライス・マシニング加工</span></h3>
-          <p class="sec152-svc__txt">5軸・4軸を含むマシニングセンタでA2017・A7075などのアルミ材を高精度に切削。半導体製造装置向けのコア部品を、2工場・計25台の設備で安定して供給します。</p>
-        </a>
-      </li>
+    <div class="hd8 hd8--center "><p class="hd8__ja">ALIにできること</p><h2 class="hd8__en">SERVICE</h2></div>
+    <p class="sec152-svc__lead">半導体製造装置用の精密部品加工を中心に、5つの事業でお客様のモノづくりを支えています。</p>
+    <ul class="sec152-svc__cont sec152-svc__cont--five">
+      <li class="svc5"><span class="svc5__no">01</span><h3 class="svc5__ttl">半導体製造装置用<br>精密部品加工</h3></li>
+      <li class="svc5"><span class="svc5__no">02</span><h3 class="svc5__ttl">真空チャンバー内<br>消耗部品の加工</h3></li>
+      <li class="svc5"><span class="svc5__no">03</span><h3 class="svc5__ttl">高品質<br>量産加工品</h3></li>
+      <li class="svc5"><span class="svc5__no">04</span><h3 class="svc5__ttl">クリーン事業</h3></li>
+      <li class="svc5"><span class="svc5__no">05</span><h3 class="svc5__ttl">マシニングセンターの<br>クーラント清掃</h3></li>
     </ul>
   </div>
 </section>
@@ -807,19 +827,19 @@ body.is-menu-open{overflow:hidden}
 <div class="hd8-block hd8-block--right"><div class="hd8 hd8--right "><p class="hd8__ja">加工事例</p><h2 class="hd8__en">WORKS</h2></div><p class="hd8__lead">半導体製造装置向けのアルミ部品を中心とした加工実績を抜粋しました。設備の一覧と対応範囲は技術・設備ページでご覧いただけます。</p></div>
 <div class="works">
 <article class="work">
-<div class="work__media"><div class="ph" data-l="加工事例写真 01（3:2）" style="background-image:url('https://cdn.goope.jp/41781/240602001528-665b3b108a449.png');background-size:cover;background-position:center"></div></div>
+<div class="work__media"><div class="ph" data-l="加工事例写真 01（3:2）" style="background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center"></div></div>
 <div class="work__tags"><span class="tag">半導体製造装置</span><span class="tag">A7075</span></div>
 <h3 class="work__ttl">真空チャンバー向けの大型構造部品</h3>
 <p class="work__txt">ストロークX1500mmクラスの縦型マシニングセンタで加工。歪みを抑える段取りと工程内での三次元測定により、平面度を安定させています。</p>
 </article>
 <article class="work">
-<div class="work__media"><div class="ph" data-l="加工事例写真 02（3:2）" style="background-image:url('https://cdn.goope.jp/41781/190419103526-5cb925de704ef.png');background-size:cover;background-position:center"></div></div>
+<div class="work__media"><div class="ph" data-l="加工事例写真 02（3:2）" style="background-image:url('assets/images/old/old-micro-drill.jpg');background-size:cover;background-position:center"></div></div>
 <div class="work__tags"><span class="tag">微細加工</span><span class="tag">最小径φ0.08</span></div>
 <h3 class="work__ttl">細径シャフトの精密旋盤加工</h3>
 <p class="work__txt">φ0.08mmまでの細径加工に対応。刃具の当たりと切削条件を追い込み、変形させずに寸法と面粗さを両立させた事例です。</p>
 </article>
 <article class="work">
-<div class="work__media"><div class="ph" data-l="加工事例写真 03（3:2）" style="background-image:url('https://cdn.goope.jp/41781/220629172602-62bc0c9aea8de.jpg');background-size:cover;background-position:center"></div></div>
+<div class="work__media"><div class="ph" data-l="加工事例写真 03（3:2）" style="background-image:url('assets/images/old/old-5axis-machining.jpg');background-size:cover;background-position:center"></div></div>
 <div class="work__tags"><span class="tag">4軸・5軸加工</span><span class="tag">小ロット</span></div>
 <h3 class="work__ttl">試作1個からの複合形状部品</h3>
 <p class="work__txt">付加軸による4軸加工で持ち替えを減らし、試作1個でも短納期で対応。図面のご相談から量産移行までを一貫してお手伝いします。</p>
@@ -839,7 +859,7 @@ body.is-menu-open{overflow:hidden}
       <p class="sec051-rec__lead">未経験からでも、機械加工の技術をひとつずつ身につけられる職場です。ベテラン社員の知識と経験を若い世代へ継承しながら、ともに成長できる仲間を募集しています。</p>
       <a class="sec051-rec__btn" href="recruit/index.html">採用情報を見る</a>
     </div>
-    <div class="sec051-rec__img"><div class="sec051-rec__ph" data-l="採用写真（960×600 相当）" style="background-image:url('https://cdn.goope.jp/41781/220629175159-62bc12af771a6.jpg');background-size:cover;background-position:center"></div></div>
+    <div class="sec051-rec__img"><div class="sec051-rec__ph" data-l="採用写真（960×600 相当）" style="background-image:url('assets/images/old/old-inspection.jpg');background-size:cover;background-position:center"></div></div>
   </div>
 </section>
 </div>
@@ -891,7 +911,7 @@ body.is-menu-open{overflow:hidden}
 <p class="ftr__addr">〒578-0911 大阪府東大阪市中新開1丁目4-8<br/>TEL 072-927-9118／FAX 072-927-9119<br/>アルミ精密切削加工（旋盤・マシニング）</p>
 </div>
 <div class="ftr__navs">
-<div><p class="ftr__ttl">技術・設備</p><ul class="ftr__list"><li><a href="tech/index.html#turning">精密旋盤加工</a></li><li><a href="tech/index.html#machining">フライス・マシニング加工</a></li><li><a href="tech/index.html#equipment">設備一覧</a></li></ul></div>
+<div><p class="ftr__ttl">技術・設備</p><ul class="ftr__list"><li><a href="tech/index.html#strength">技術・強み</a></li><li><a href="tech/index.html#faq">エイエルアイに出来ること（Q&A）</a></li><li><a href="tech/index.html#equipment">設備一覧</a></li></ul></div>
 <div><p class="ftr__ttl">会社案内</p><ul class="ftr__list"><li><a href="company/index.html#profile">会社概要</a></li><li><a href="company/index.html#history">沿革</a></li><li><a href="company/index.html#quality">品質方針（ISO9001）</a></li></ul></div>
 <div><p class="ftr__ttl">その他</p><ul class="ftr__list"><li><a href="news/index.html">お知らせ</a></li><li><a href="recruit/index.html">採用情報</a></li><li><a href="privacy/index.html">プライバシーポリシー</a></li></ul></div>
 </div>
