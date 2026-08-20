@@ -1,5 +1,5 @@
 {
-  "version": "ALI renewal photo-realign + motion v3",
+  "version": "ALI renewal real-photo headers + movie v4",
   "generated": "2026-08-20",
   "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
@@ -28,6 +28,10 @@
       "old-workplace.jpg（氏名入り）",
       "old-factory2-exterior.jpg（集合写真）",
       "old-award-mono.jpg（受賞時の2名）"
+    ],
+    "新規撮影の実写（人物なし・最優先で使用）": [
+      "photo/01-factory-interior.jpg（工場内観・マシニングセンタと加工品）",
+      "photo/15-factory-exterior.jpg（本社工場外観・ALI看板）"
     ]
   },
   "imageAssignments": {
@@ -45,8 +49,8 @@
       "tech": "old/old-micro-drill.jpg（精密加工の実物）",
       "company": "old/old-factory-machines.jpg（自社工場フロア）",
       "recruit": "old/old-ali-logo-hole.jpg（ALIロゴの加工品）",
-      "news": "old/old-heat-treatment.jpg（工程写真）",
-      "contact": "old/old-sandblast.jpg（作業風景）"
+      "news": "photo/01-factory-interior.jpg（新規撮影・工場内観）",
+      "contact": "photo/15-factory-exterior.jpg（新規撮影・工場外観）"
     },
     "techEquipmentFigures": [
       "old/old-machining-center.jpg",
@@ -55,12 +59,22 @@
       "old/old-cad.jpg"
     ],
     "contactCTA": "old/old-factory-machines.jpg",
-    "recruitMessage": "old/old-factory-machines.jpg"
+    "recruitMessage": "old/old-factory-machines.jpg",
+    "moviePoster": "photo/01-factory-interior.jpg"
   },
   "notes": [
-    "ページヘッダーは5ページすべて別写真。内容との一致度は tech / company が高く、news / contact は手持ち素材の都合で暫定。",
-    "old-factory-machines.jpg は現場の実写が1点しかないため複数箇所で使用している。差し替え時に分散させたい。",
+    "ページヘッダーは5ページすべて別写真。news / contact は新規撮影の実写に差し替え済み。",
+    "tech / company / recruit のヘッダーは旧サイト素材のため、新規撮影分が揃い次第の差し替えが望ましい。",
+    "支給された元PNG（assets/images/*｜*.png）は .gitignore 済み。配信は photo/ 配下の最適化JPEGを使用。",
     "加工事例カードは .work__ph / .card__ph で高さとトリミングを統一済み。写真を差し替えても崩れない。",
-    "old-micro-drill.jpg は元画像に焼き込まれていた左右の黒帯を除去（1920x1080 → 1530x1080）。"
-  ]
+    "未使用の生成画像（01〜16*.webp／team-message.webp）はHTMLから参照ゼロ。必要なら削除可。"
+  ],
+  "movie": {
+    "placement": "TOP／WORKSとRECRUITの間（#movie）",
+    "youtubeId": "CQzsZ1BKZSU",
+    "title": "ALIのPV1（限定公開）",
+    "embed": "youtube-nocookie.com",
+    "loading": "サムネイルをクリックした時点で初めてiframeを生成。未クリックなら外部リクエスト・Cookieとも発生しない。",
+    "poster": "assets/images/photo/01-factory-interior.jpg（YouTube側のサムネイルは従業員が写るため不使用）"
+  }
 }

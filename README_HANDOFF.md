@@ -82,3 +82,21 @@ python3 -m http.server 8080
 1. お知らせ・お問い合わせページのヘッダー写真（内容との一致度が低い）
 2. 加工事例3点（半導体装置向けの実製品写真があるとより説得力が出ます）
 3. 採用ページの職場写真（現メンバーでの撮影）
+
+## 2026-08-20 追加分（先方フィードバック対応）
+- お知らせ／お問い合わせのヘッダーを**新規撮影の実写**に差し替え。
+  - お知らせ = `assets/images/photo/01-factory-interior.jpg`（工場内観）
+  - お問い合わせ = `assets/images/photo/15-factory-exterior.jpg`（本社工場外観）
+- TOPに**会社紹介動画セクション（`#movie`）**を新設。YouTube限定公開動画「ALIのPV1」を埋め込み。
+  - サムネイルがクリックされるまでYouTubeを読み込まない方式。未クリックなら外部リクエストもCookieも発生せず、表示速度に影響しない。
+  - 埋め込み先は `youtube-nocookie.com`。
+  - ポスター画像は自社の内観写真を使用（YouTube側のサムネイルには従業員が写るため不使用）。
+- 支給された元PNGは `.gitignore` に追加。配信には `assets/images/photo/` の最適化JPEG（各約140KB）を使用。
+
+### 動画を差し替える場合
+`index.html` の `data-yt="CQzsZ1BKZSU"` を新しい動画IDに変更するだけで差し替わる。
+ポスター画像は CSS の `.mv__poster` の `background-image` で指定している。
+
+### 今後の写真差し替え
+`tech` / `company` / `recruit` のヘッダーは旧サイト素材のまま。新規撮影分が揃い次第の差し替えを推奨。
+割当は `asset-manifest.json` の `imageAssignments` に集約している。
