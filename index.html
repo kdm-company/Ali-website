@@ -715,7 +715,7 @@ body{background:var(--c-bg);color:#33383E}
 @media(max-width:767px){
  .set002-hero__slide:nth-child(1) .set002-hero__ph{background-image:url('assets/images/old/old-factory-machines.jpg')!important;background-position:center bottom!important}
  .set002-hero__slide:nth-child(2) .set002-hero__ph{background-image:url('assets/images/old/old-micro-drill.jpg')!important}
- .set002-hero__slide:nth-child(3) .set002-hero__ph{background-image:url('assets/images/old/old-ali-logo-hole.jpg')!important}
+ .set002-hero__slide:nth-child(3) .set002-hero__ph{background-image:url('assets/images/old/old-heat-treatment.jpg')!important}
  .sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg')!important;background-position:center bottom!important}
 }
 
@@ -756,6 +756,28 @@ body.is-menu-open{overflow:hidden}
 .sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center bottom}
 .sec156-cta__bg::before{content:none}
 @media screen and (max-width:767px){.sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg');background-position:center bottom}}
+
+/* ===== スクロール連動の控えめなモーション（企業サイトとして自然な範囲） ===== */
+@media (prefers-reduced-motion:no-preference){
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .85s cubic-bezier(.2,.7,.3,1),transform .85s cubic-bezier(.2,.7,.3,1)}
+  .rv.is-in{opacity:1;transform:none}
+}
+
+/* ===== ヒーロー：自動切替＋ゆるやかなズーム ===== */
+@media (prefers-reduced-motion:no-preference){
+  .set002-hero__ph{transform:scale(1.005);transition:transform 7.5s ease-out}
+  .set002-hero__slide.set002-is-active .set002-hero__ph{transform:scale(1.075)}
+  .set002-hero__catch{animation:heroFade 1.5s .2s ease-out both}
+  @keyframes heroFade{from{opacity:0}to{opacity:1}}
+}
+/* スライド切替インジケーター（PC/SP共通で表示） */
+.set002-hero__dots{position:absolute;left:0;right:0;bottom:28px;z-index:2;display:flex;justify-content:center;gap:10px;margin:0;padding:0;list-style:none}
+.set002-hero__dots li{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.45);transition:background .3s,transform .3s}
+.set002-hero__dots li.set002-is-active{background:var(--c-red);transform:scale(1.15)}
+
+/* ===== 加工事例：写真のトリミング・比率を統一（差し替え後もそのまま使える） ===== */
+.work__ph{width:100%;height:210px;background-size:cover;background-position:center;background-repeat:no-repeat}
+@media screen and (max-width:768px){.work__ph{height:56vw;max-height:300px}}
 </style>
 </head>
 <body>
@@ -776,8 +798,8 @@ body.is-menu-open{overflow:hidden}
 <section class="set002-hero">
 <div class="set002-hero__slides">
 <div class="set002-hero__slide set002-is-active"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center"></div></div>
-<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-machining-center.jpg');background-size:cover;background-position:center"></div></div>
-<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-5axis-machining.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-micro-drill.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-heat-treatment.jpg');background-size:cover;background-position:center"></div></div>
 </div>
 <p class="set002-hero__catch">アルミ精密加工の技術で、<br/>半導体の最先端をささえる。</p>
 <ul class="set002-hero__dots"><li class="set002-is-active"></li><li></li><li></li></ul>
@@ -828,22 +850,22 @@ body.is-menu-open{overflow:hidden}
 <div class="hd8-block hd8-block--right"><div class="hd8 hd8--right "><p class="hd8__ja">加工事例</p><h2 class="hd8__en">WORKS</h2></div><p class="hd8__lead">半導体製造装置向けのアルミ部品を中心とした加工実績を抜粋しました。設備の一覧と対応範囲は技術・設備ページでご覧いただけます。</p></div>
 <div class="works">
 <article class="work">
-<div class="work__media"><div class="ph" data-l="加工事例写真 01（3:2）" style="background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center"></div></div>
-<div class="work__tags"><span class="tag">半導体製造装置</span><span class="tag">A7075</span></div>
-<h3 class="work__ttl">真空チャンバー向けの大型構造部品</h3>
-<p class="work__txt">ストロークX1500mmクラスの縦型マシニングセンタで加工。歪みを抑える段取りと工程内での三次元測定により、平面度を安定させています。</p>
-</article>
-<article class="work">
-<div class="work__media"><div class="ph" data-l="加工事例写真 02（3:2）" style="background-image:url('assets/images/old/old-micro-drill.jpg');background-size:cover;background-position:center"></div></div>
+<div class="work__media"><div class="ph work__ph" style="background-image:url('assets/images/old/old-micro-drill.jpg')"></div></div>
 <div class="work__tags"><span class="tag">微細加工</span><span class="tag">最小径φ0.08</span></div>
-<h3 class="work__ttl">細径シャフトの精密旋盤加工</h3>
-<p class="work__txt">φ0.08mmまでの細径加工に対応。刃具の当たりと切削条件を追い込み、変形させずに寸法と面粗さを両立させた事例です。</p>
+<h3 class="work__ttl">Φ0.3穴でＡＬｉロゴ製作</h3>
+<p class="work__txt">マイクロメートル（1000分代）の公差の厳しい製品や小径穴も得意といたしております。最小径ではφ0.08の実績もございます。</p>
 </article>
 <article class="work">
-<div class="work__media"><div class="ph" data-l="加工事例写真 03（3:2）" style="background-image:url('assets/images/old/old-5axis-machining.jpg');background-size:cover;background-position:center"></div></div>
-<div class="work__tags"><span class="tag">4軸・5軸加工</span><span class="tag">小ロット</span></div>
-<h3 class="work__ttl">試作1個からの複合形状部品</h3>
-<p class="work__txt">付加軸による4軸加工で持ち替えを減らし、試作1個でも短納期で対応。図面のご相談から量産移行までを一貫してお手伝いします。</p>
+<div class="work__media"><div class="ph work__ph" style="background-image:url('assets/images/old/old-ali-logo-hole.jpg')"></div></div>
+<div class="work__tags"><span class="tag">小径穴</span><span class="tag">アルミ精密</span></div>
+<h3 class="work__ttl">小径穴の連続加工</h3>
+<p class="work__txt">吸着プレートやシャワープレート等の実績も多く、小ロットでは1個から量産品まで複数個同時加工にて対応可能です。</p>
+</article>
+<article class="work">
+<div class="work__media"><div class="ph work__ph" style="background-image:url('assets/images/old/old-sandblast.jpg')"></div></div>
+<div class="work__tags"><span class="tag">表面処理</span><span class="tag">協力企業連携</span></div>
+<h3 class="work__ttl">アルマイト・表面処理まで一貫対応</h3>
+<p class="work__txt">素材調達はもちろん、アルマイトや特殊表面処理まで安心してお任せください。※写真は協力企業様ご提供</p>
 </article>
 </div>
 <div class="center-btn"><a class="btn" href="tech/index.html#works">事例をもっと見る</a></div>
@@ -860,7 +882,7 @@ body.is-menu-open{overflow:hidden}
       <p class="sec051-rec__lead">未経験からでも、機械加工の技術をひとつずつ身につけられる職場です。ベテラン社員の知識と経験を若い世代へ継承しながら、ともに成長できる仲間を募集しています。</p>
       <a class="sec051-rec__btn" href="recruit/index.html">採用情報を見る</a>
     </div>
-    <div class="sec051-rec__img"><div class="sec051-rec__ph" data-l="採用写真（960×600 相当）" style="background-image:url('assets/images/old/old-inspection.jpg');background-size:cover;background-position:center"></div></div>
+    <div class="sec051-rec__img"><div class="sec051-rec__ph" data-l="採用写真（960×600 相当）" style="background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center"></div></div>
   </div>
 </section>
 </div>
@@ -969,6 +991,70 @@ body.is-menu-open{overflow:hidden}
     if (nav.contains(event.target) || btn.contains(event.target)) return;
     closeMenu();
   });
+})();
+</script>
+<script>
+/* スクロールに合わせた淡いフェードイン（reduced-motion 指定時は無効）
+   非表示クラス .rv を付けるのも解除するのもこのスクリプト自身なので、
+   JSが動かない環境では最初から通常表示になる。 */
+(() => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const sel = '.hd8,.lead,.txt,.work,.card,.sec152-svc__cont--five>li,.str li,.ftc__c,.stp__c,.spec,.tl li,.acc__c,.qlt,.eqp-fig,.set002-slg__in,.nw8__list,.cinfo__c,.faq,.nws';
+  const els = Array.from(document.querySelectorAll(sel)).filter(el => el.offsetParent !== null);
+  if (!els.length) return;
+  els.forEach(el => el.classList.add('rv'));
+  els.forEach(el => {
+    const sibs = Array.from(el.parentElement.children).filter(n => n.classList.contains('rv'));
+    el.style.transitionDelay = Math.min(sibs.indexOf(el), 4) * 70 + 'ms';
+  });
+  let pending = els.slice(), ticking = false;
+  const reveal = () => {
+    ticking = false;
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    pending = pending.filter(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.94 && r.bottom > 0) { el.classList.add('is-in'); return false; }
+      return true;
+    });
+    if (!pending.length) {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    }
+  };
+  const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(reveal); } };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('load', reveal);
+  reveal();
+  /* 保険：万一表示処理が働かない場合でも内容を必ず見せる */
+  setTimeout(() => { if (!document.querySelector('.rv.is-in')) els.forEach(el => el.classList.add('is-in')); }, 8000);
+})();
+</script>
+<script>
+/* ヒーロースライダー：6秒ごとの自動切替（タブ非表示中は停止） */
+(() => {
+  const slides = Array.from(document.querySelectorAll('.set002-hero__slide'));
+  const dots = Array.from(document.querySelectorAll('.set002-hero__dots li'));
+  if (slides.length < 2) return;
+  let i = Math.max(0, slides.findIndex(s => s.classList.contains('set002-is-active')));
+  let timer = null;
+  const show = n => {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((s, k) => s.classList.toggle('set002-is-active', k === i));
+    dots.forEach((d, k) => d.classList.toggle('set002-is-active', k === i));
+  };
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  const start = () => { stop(); timer = setInterval(() => show(i + 1), 6000); };
+  dots.forEach((d, k) => {
+    d.style.cursor = 'pointer';
+    d.setAttribute('role', 'button');
+    d.setAttribute('tabindex', '0');
+    d.setAttribute('aria-label', (k + 1) + '枚目の写真を表示');
+    d.addEventListener('click', () => { show(k); start(); });
+    d.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(k); start(); } });
+  });
+  document.addEventListener('visibilitychange', () => { document.hidden ? stop() : start(); });
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) start();
 })();
 </script>
 </body>

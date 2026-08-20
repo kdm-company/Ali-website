@@ -1,6 +1,6 @@
 {
-  "version": "ALI renewal old-site-restore v2",
-  "generated": "2026-08-19",
+  "version": "ALI renewal photo-realign + motion v3",
+  "generated": "2026-08-20",
   "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
     "/": "index.html",
@@ -10,42 +10,57 @@
     "/news": "news/index.html",
     "/contact": "contact/index.html"
   },
+  "photoPolicy": {
+    "実写（現場・加工品）": [
+      "old-factory-machines.jpg",
+      "old-micro-drill.jpg",
+      "old-ali-logo-hole.jpg",
+      "old-heat-treatment.jpg",
+      "old-sandblast.jpg"
+    ],
+    "メーカー資料の切り抜き（白背景・設備一覧の図版のみに使用）": [
+      "old-machining-center.jpg",
+      "old-5axis-machining.jpg",
+      "old-inspection.jpg",
+      "old-cad.jpg"
+    ],
+    "削除済み（旧メンバーが写るため使用不可）": [
+      "old-workplace.jpg（氏名入り）",
+      "old-factory2-exterior.jpg（集合写真）",
+      "old-award-mono.jpg（受賞時の2名）"
+    ]
+  },
   "imageAssignments": {
-    "heroPC": [
+    "heroSlides": [
       "old/old-factory-machines.jpg",
+      "old/old-micro-drill.jpg",
+      "old/old-heat-treatment.jpg"
+    ],
+    "worksCards": [
+      "old/old-micro-drill.jpg",
+      "old/old-ali-logo-hole.jpg",
+      "old/old-sandblast.jpg"
+    ],
+    "pageHeader": {
+      "tech": "old/old-micro-drill.jpg（精密加工の実物）",
+      "company": "old/old-factory-machines.jpg（自社工場フロア）",
+      "recruit": "old/old-ali-logo-hole.jpg（ALIロゴの加工品）",
+      "news": "old/old-heat-treatment.jpg（工程写真）",
+      "contact": "old/old-sandblast.jpg（作業風景）"
+    },
+    "techEquipmentFigures": [
       "old/old-machining-center.jpg",
-      "old/old-5axis-machining.jpg"
-    ],
-    "heroSP": [
-      "old/old-factory-machines.jpg",
-      "old/old-micro-drill.jpg",
-      "old/old-ali-logo-hole.jpg"
-    ],
-    "worksTop": [
-      "old/old-factory-machines.jpg",
-      "old/old-micro-drill.jpg",
-      "old/old-5axis-machining.jpg"
-    ],
-    "techStrength": "old/old-cad.jpg",
-    "techCases": [
-      "old/old-factory-machines.jpg",
-      "old/old-micro-drill.jpg",
       "old/old-5axis-machining.jpg",
-      "old/old-heat-treatment.jpg",
-      "old/old-sandblast.jpg",
-      "old/old-ali-logo-hole.jpg"
+      "old/old-inspection.jpg",
+      "old/old-cad.jpg"
     ],
-    "recruitTop": "old/old-inspection.jpg",
-    "recruitMessage": "old/old-workplace.jpg",
     "contactCTA": "old/old-factory-machines.jpg",
-    "companyFactoryBand": "old/old-factory2-exterior.jpg",
-    "newsHeader": "old/old-award-mono.jpg",
-    "contactHeader": "old/old-factory2-exterior.jpg"
+    "recruitMessage": "old/old-factory-machines.jpg"
   },
   "notes": [
-    "assets/images/old/ の12点は旧サイト（cdn.goope.jp）から2026-08-19に取得した実写真。",
-    "生成画像のうち実写と誤認しうるもの（14-president / 15-factory-exterior / team-contact-pc / team-contact-sp）は削除済み。",
-    "Google map は company ページに埋め込み済み。",
-    "相対リンク構成のためサブディレクトリ配信（GitHub Pages）でも動作する。"
+    "ページヘッダーは5ページすべて別写真。内容との一致度は tech / company が高く、news / contact は手持ち素材の都合で暫定。",
+    "old-factory-machines.jpg は現場の実写が1点しかないため複数箇所で使用している。差し替え時に分散させたい。",
+    "加工事例カードは .work__ph / .card__ph で高さとトリミングを統一済み。写真を差し替えても崩れない。",
+    "old-micro-drill.jpg は元画像に焼き込まれていた左右の黒帯を除去（1920x1080 → 1530x1080）。"
   ]
 }
