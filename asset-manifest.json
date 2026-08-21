@@ -1,5 +1,5 @@
 {
-  "version": "ALI renewal semiconductor-first-view v6",
+  "version": "ALI renewal team-photo v7",
   "generated": "2026-08-20",
   "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
@@ -29,7 +29,8 @@
     ],
     "新規撮影の実写（人物なし・最優先で使用）": [
       "photo/01-factory-interior.jpg（工場内観・マシニングセンタと加工品）",
-      "photo/15-factory-exterior.jpg（本社工場外観・ALI看板）"
+      "photo/15-factory-exterior.jpg（本社工場外観・ALI看板）",
+      "photo/team-group.webp / team-group-sp.webp（社員集合写真・現メンバー／透過）"
     ],
     "使用不可（他社＝協力企業様ご提供のため）": [
       "old-heat-treatment.jpg（熱処理・協力企業様提供）",
@@ -78,11 +79,13 @@
       "old/old-micro-drill.jpg",
       "old/old-ali-logo-hole.jpg",
       "old/old-factory-machines.jpg"
-    ]
+    ],
+    "recruitTeam": "photo/team-group.webp（PC）／photo/team-group-sp.webp（SP・768px以下）"
   },
   "notes": [
     "TOPのファーストビューは現行サイト（ali2016.jp）のメインビジュアルを踏襲。「半導体のコア部品メーカー」と一目で伝わることを最優先している。差し替える場合もこの方針を維持すること。",
     "ヒーロー写真が明るいため、中央コピーの可読性確保用に暗幕（.set002-hero__ph::before）を濃くしている。写真を差し替える際は濃度を再確認。",
+    "採用ページの TEAM 帯は透過画像。暗色地に直接置く前提なので、明るい背景に移す場合は影の付け方を要調整。元PNG（assets/images/集合写真.png・6.9MB）は .gitignore 済み。",
     "掲載写真はすべて自社（ALI）の実写。協力企業様ご提供の2点は使用停止し、「※写真は協力企業様ご提供」の注記も削除済み。",
     "自社の実写ストックは5点のみ（新規撮影2点＋旧サイト3点）のため、同じ写真を複数箇所で使用している。撮影分が増え次第分散させる。",
     "tech / company / recruit のヘッダーは旧サイト素材。新規撮影分が揃い次第の差し替えが望ましい。",

@@ -146,4 +146,4 @@ vite.config.ts.timestamp-*
 .DS_Store
 
 # 支給された元画像（最適化版を assets/images/photo/ に配置して使用）
-assets/images/*｜*.png
+assets/images/*.png
