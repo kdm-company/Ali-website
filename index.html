@@ -713,9 +713,9 @@ body{background:var(--c-bg);color:#33383E}
 .set002-hero__ph::after,.sec152-svc__ph::after,.ph::after,.sec051-rec__ph::after,.sec156-cta__bg::before{display:none!important}
 .sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg')!important;background-size:cover!important;background-position:center bottom!important}
 @media(max-width:767px){
- .set002-hero__slide:nth-child(1) .set002-hero__ph{background-image:url('assets/images/old/old-factory-machines.jpg')!important;background-position:center bottom!important}
- .set002-hero__slide:nth-child(2) .set002-hero__ph{background-image:url('assets/images/old/old-micro-drill.jpg')!important}
- .set002-hero__slide:nth-child(3) .set002-hero__ph{background-image:url('assets/images/photo/15-factory-exterior.jpg')!important;background-position:center 58%!important}
+ .set002-hero__slide:nth-child(1) .set002-hero__ph{background-image:url('assets/images/top/01-semiconductor-wafer.jpg')!important;background-position:center!important}
+ .set002-hero__slide:nth-child(2) .set002-hero__ph{background-image:url('assets/images/top/02-precision-cutting.jpg')!important;background-position:center!important}
+ .set002-hero__slide:nth-child(3) .set002-hero__ph{background-image:url('assets/images/top/03-semiconductor-chip.jpg')!important;background-position:center!important}
  .sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg')!important;background-position:center bottom!important}
 }
 
@@ -756,6 +756,10 @@ body.is-menu-open{overflow:hidden}
 .sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center bottom}
 .sec156-cta__bg::before{content:none}
 @media screen and (max-width:767px){.sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg');background-position:center bottom}}
+
+/* ヒーローが明るい半導体写真になったため、中央コピーの可読性を確保する暗幕を強める */
+.set002-hero__ph::before{background:linear-gradient(180deg,rgba(12,14,18,.50) 0%,rgba(12,14,18,.40) 42%,rgba(12,14,18,.60) 100%),radial-gradient(72% 62% at 50% 46%,rgba(12,14,18,.30) 0%,rgba(12,14,18,.52) 100%)!important}
+.set002-hero__catch{text-shadow:0 2px 26px rgba(6,8,10,.78),0 1px 5px rgba(6,8,10,.72)}
 
 /* ===== 会社紹介動画（YouTube／クリックされるまで読み込まない） ===== */
 .sec--movie{padding:var(--sec-y) 0;background:var(--c-bg-tint)}
@@ -818,9 +822,9 @@ body.is-menu-open{overflow:hidden}
 </header>
 <section class="set002-hero">
 <div class="set002-hero__slides">
-<div class="set002-hero__slide set002-is-active"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center"></div></div>
-<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/old/old-micro-drill.jpg');background-size:cover;background-position:center"></div></div>
-<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/photo/15-factory-exterior.jpg');background-size:cover;background-position:center 58%"></div></div>
+<div class="set002-hero__slide set002-is-active"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/top/01-semiconductor-wafer.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/top/02-precision-cutting.jpg');background-size:cover;background-position:center"></div></div>
+<div class="set002-hero__slide"><div class="set002-hero__ph" data-l="ヒーロー写真（PC 1920×920／SP 640×1113 相当）" style="background-image:url('assets/images/top/03-semiconductor-chip.jpg');background-size:cover;background-position:center"></div></div>
 </div>
 <p class="set002-hero__catch">アルミ精密加工の技術で、<br/>半導体の最先端をささえる。</p>
 <ul class="set002-hero__dots"><li class="set002-is-active"></li><li></li><li></li></ul>

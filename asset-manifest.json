@@ -1,5 +1,5 @@
 {
-  "version": "ALI renewal own-photos-only v5",
+  "version": "ALI renewal semiconductor-first-view v6",
   "generated": "2026-08-20",
   "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
@@ -34,13 +34,19 @@
     "使用不可（他社＝協力企業様ご提供のため）": [
       "old-heat-treatment.jpg（熱処理・協力企業様提供）",
       "old-sandblast.jpg（サンドブラスト・協力企業様提供）"
+    ],
+    "現行サイト（ali2016.jp）のTOPメインビジュアル": [
+      "top/01-semiconductor-wafer.jpg（半導体ウェハ搬送）",
+      "top/02-precision-cutting.jpg（精密切削）",
+      "top/03-semiconductor-chip.jpg（半導体チップ）",
+      "top/04-japan-map.jpg（日本地図／Nippon の一節用・未使用）"
     ]
   },
   "imageAssignments": {
     "heroSlides": [
-      "old/old-factory-machines.jpg",
-      "old/old-micro-drill.jpg",
-      "photo/15-factory-exterior.jpg"
+      "top/01-semiconductor-wafer.jpg",
+      "top/02-precision-cutting.jpg",
+      "top/03-semiconductor-chip.jpg"
     ],
     "worksCards": [
       "old/old-micro-drill.jpg",
@@ -75,6 +81,8 @@
     ]
   },
   "notes": [
+    "TOPのファーストビューは現行サイト（ali2016.jp）のメインビジュアルを踏襲。「半導体のコア部品メーカー」と一目で伝わることを最優先している。差し替える場合もこの方針を維持すること。",
+    "ヒーロー写真が明るいため、中央コピーの可読性確保用に暗幕（.set002-hero__ph::before）を濃くしている。写真を差し替える際は濃度を再確認。",
     "掲載写真はすべて自社（ALI）の実写。協力企業様ご提供の2点は使用停止し、「※写真は協力企業様ご提供」の注記も削除済み。",
     "自社の実写ストックは5点のみ（新規撮影2点＋旧サイト3点）のため、同じ写真を複数箇所で使用している。撮影分が増え次第分散させる。",
     "tech / company / recruit のヘッダーは旧サイト素材。新規撮影分が揃い次第の差し替えが望ましい。",
