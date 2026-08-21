@@ -1,5 +1,5 @@
 {
-  "version": "ALI renewal real-photo headers + movie v4",
+  "version": "ALI renewal own-photos-only v5",
   "generated": "2026-08-20",
   "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
@@ -14,9 +14,7 @@
     "実写（現場・加工品）": [
       "old-factory-machines.jpg",
       "old-micro-drill.jpg",
-      "old-ali-logo-hole.jpg",
-      "old-heat-treatment.jpg",
-      "old-sandblast.jpg"
+      "old-ali-logo-hole.jpg"
     ],
     "メーカー資料の切り抜き（白背景・設備一覧の図版のみに使用）": [
       "old-machining-center.jpg",
@@ -32,18 +30,22 @@
     "新規撮影の実写（人物なし・最優先で使用）": [
       "photo/01-factory-interior.jpg（工場内観・マシニングセンタと加工品）",
       "photo/15-factory-exterior.jpg（本社工場外観・ALI看板）"
+    ],
+    "使用不可（他社＝協力企業様ご提供のため）": [
+      "old-heat-treatment.jpg（熱処理・協力企業様提供）",
+      "old-sandblast.jpg（サンドブラスト・協力企業様提供）"
     ]
   },
   "imageAssignments": {
     "heroSlides": [
       "old/old-factory-machines.jpg",
       "old/old-micro-drill.jpg",
-      "old/old-heat-treatment.jpg"
+      "photo/15-factory-exterior.jpg"
     ],
     "worksCards": [
       "old/old-micro-drill.jpg",
       "old/old-ali-logo-hole.jpg",
-      "old/old-sandblast.jpg"
+      "photo/01-factory-interior.jpg"
     ],
     "pageHeader": {
       "tech": "old/old-micro-drill.jpg（精密加工の実物）",
@@ -60,14 +62,25 @@
     ],
     "contactCTA": "old/old-factory-machines.jpg",
     "recruitMessage": "old/old-factory-machines.jpg",
-    "moviePoster": "photo/01-factory-interior.jpg"
+    "moviePoster": "photo/01-factory-interior.jpg",
+    "techKvBand": [
+      "old/old-factory-machines.jpg",
+      "photo/01-factory-interior.jpg",
+      "photo/15-factory-exterior.jpg"
+    ],
+    "techWorksCards": [
+      "old/old-micro-drill.jpg",
+      "old/old-ali-logo-hole.jpg",
+      "old/old-factory-machines.jpg"
+    ]
   },
   "notes": [
-    "ページヘッダーは5ページすべて別写真。news / contact は新規撮影の実写に差し替え済み。",
-    "tech / company / recruit のヘッダーは旧サイト素材のため、新規撮影分が揃い次第の差し替えが望ましい。",
+    "掲載写真はすべて自社（ALI）の実写。協力企業様ご提供の2点は使用停止し、「※写真は協力企業様ご提供」の注記も削除済み。",
+    "自社の実写ストックは5点のみ（新規撮影2点＋旧サイト3点）のため、同じ写真を複数箇所で使用している。撮影分が増え次第分散させる。",
+    "tech / company / recruit のヘッダーは旧サイト素材。新規撮影分が揃い次第の差し替えが望ましい。",
     "支給された元PNG（assets/images/*｜*.png）は .gitignore 済み。配信は photo/ 配下の最適化JPEGを使用。",
     "加工事例カードは .work__ph / .card__ph で高さとトリミングを統一済み。写真を差し替えても崩れない。",
-    "未使用の生成画像（01〜16*.webp／team-message.webp）はHTMLから参照ゼロ。必要なら削除可。"
+    "設備一覧の図版（old-machining-center / old-5axis-machining / old-inspection / old-cad）はメーカー資料。仕様表の図版としてのみ使用。"
   ],
   "movie": {
     "placement": "TOP／WORKSとRECRUITの間（#movie）",
