@@ -1,5 +1,5 @@
 {
-  "version": "ALI renewal team-photo v7",
+  "version": "ALI renewal business-list-fix v8",
   "generated": "2026-08-20",
   "sourcePage": "ALi旧サイト（ali2016.jp）テキスト・画像アーカイブ / https://app.notion.com/p/3dca07ed7d724682ad6270e5a71a628d",
   "pages": {
@@ -83,6 +83,7 @@
     "recruitTeam": "photo/team-group.webp（PC）／photo/team-group-sp.webp（SP・768px以下）"
   },
   "notes": [
+    "事業内容は4項目（半導体製造装置用精密部品加工／真空チャンバー内消耗部品の加工／高品質量産加工品／クリーン事業）。旧サイトに載っていた「マシニングセンターのクーラント清掃」は未実施のため2026-08-20に削除。復活させないこと。",
     "TOPのファーストビューは現行サイト（ali2016.jp）のメインビジュアルを踏襲。「半導体のコア部品メーカー」と一目で伝わることを最優先している。差し替える場合もこの方針を維持すること。",
     "ヒーロー写真が明るいため、中央コピーの可読性確保用に暗幕（.set002-hero__ph::before）を濃くしている。写真を差し替える際は濃度を再確認。",
     "採用ページの TEAM 帯は透過画像。暗色地に直接置く前提なので、明るい背景に移す場合は影の付け方を要調整。元PNG（assets/images/集合写真.png・6.9MB）は .gitignore 済み。",
@@ -91,7 +92,8 @@
     "tech / company / recruit のヘッダーは旧サイト素材。新規撮影分が揃い次第の差し替えが望ましい。",
     "支給された元PNG（assets/images/*｜*.png）は .gitignore 済み。配信は photo/ 配下の最適化JPEGを使用。",
     "加工事例カードは .work__ph / .card__ph で高さとトリミングを統一済み。写真を差し替えても崩れない。",
-    "設備一覧の図版（old-machining-center / old-5axis-machining / old-inspection / old-cad）はメーカー資料。仕様表の図版としてのみ使用。"
+    "設備一覧の図版（old-machining-center / old-5axis-machining / old-inspection / old-cad）はメーカー資料。仕様表の図版としてのみ使用。",
+    "TOPのSERVICEは4項目だがクラス名は .sec152-svc__cont--five / .svc5 のまま（旧5項目時の名残）。項目数を変える際はグリッドの列数も合わせること。"
   ],
   "movie": {
     "placement": "TOP／WORKSとRECRUITの間（#movie）",
