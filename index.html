@@ -744,13 +744,13 @@ body.is-menu-open{overflow:hidden}
 @media screen and (max-width:768px){.set002-slg + .set002-news{margin-top:0}}
 /* ===== ALIにできること（事業内容5項目）カード ===== */
 .sec152-svc__lead{margin:20px auto 0;max-width:760px;text-align:center;font-size:15px;color:var(--c-text-sub)}
-.sec152-svc__cont--five{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:56px 60px 50px}
+.sec152-svc__cont--five{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:56px 60px 50px}
 .sec152-svc__cont--five>li{width:auto;margin:0;background:#fff;border:1px solid var(--c-line);padding:30px 16px 32px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:0}
 .svc5__no{font-family:var(--ff-en);font-size:13px;letter-spacing:.2em;color:var(--c-text-mute)}
 .svc5__no::after{content:"";display:block;width:28px;height:1px;background:var(--c-line);margin:12px auto 16px}
 .svc5__ttl{margin:0;font-size:16px;font-weight:700;letter-spacing:.06em;line-height:1.7;color:var(--c-text)}
-@media screen and (max-width:1250px){.sec152-svc__cont--five{grid-template-columns:repeat(4,1fr);gap:14px;padding:48px 40px 40px}}
-@media screen and (max-width:768px){.sec152-svc__cont--five{grid-template-columns:1fr 1fr;gap:12px;padding:24px 24px 20px}.svc5__ttl{font-size:14.5px}.svc5__ttl br{display:none}}
+@media screen and (max-width:1250px){.sec152-svc__cont--five{grid-template-columns:repeat(3,1fr);gap:14px;padding:48px 40px 40px}}
+@media screen and (max-width:768px){.sec152-svc__cont--five{grid-template-columns:1fr 1fr;gap:12px;padding:24px 24px 20px}.sec152-svc__cont--five>li:last-child{grid-column:1/-1}.svc5__ttl{font-size:14.5px}.svc5__ttl br{display:none}}
 
 /* CTA背景を実写真に差し替え（プレースホルダー表示を無効化） */
 .sec156-cta__bg{background-image:url('assets/images/old/old-factory-machines.jpg');background-size:cover;background-position:center bottom}
@@ -857,12 +857,11 @@ body.is-menu-open{overflow:hidden}
 <section class="sec152-svc">
   <div class="sec152-inner">
     <div class="hd8 hd8--center "><p class="hd8__ja">ALIにできること</p><h2 class="hd8__en">SERVICE</h2></div>
-    <p class="sec152-svc__lead">半導体製造装置用の精密部品加工を中心に、4つの事業でお客様のモノづくりを支えています。</p>
+    <p class="sec152-svc__lead">半導体製造装置用の精密部品加工を中心に、3つの事業でお客様のモノづくりを支えています。</p>
     <ul class="sec152-svc__cont sec152-svc__cont--five">
       <li class="svc5"><span class="svc5__no">01</span><h3 class="svc5__ttl">半導体製造装置用<br>精密部品加工</h3></li>
       <li class="svc5"><span class="svc5__no">02</span><h3 class="svc5__ttl">真空チャンバー内<br>消耗部品の加工</h3></li>
       <li class="svc5"><span class="svc5__no">03</span><h3 class="svc5__ttl">高品質<br>量産加工品</h3></li>
-      <li class="svc5"><span class="svc5__no">04</span><h3 class="svc5__ttl">クリーン事業</h3></li>
     </ul>
   </div>
 </section>
